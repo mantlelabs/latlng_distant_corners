@@ -12,30 +12,37 @@ import sys
 
 count = 1
 
+d = 0 #Distance in m is the first argument 
+lat1 = 0 #Current lat point converted to radians
+lon1 = 0 #Current long point converted to radians
+
 try:
-    d = sys.argv[1] #Distance in m is the first argument 
-    lat1 = sys.argv[2] #Current lat point converted to radians
-    lon1 = sys.argv[3] #Current long point converted to radians
+    d = float(sys.argv[1]) #Distance in m is the first argument 
+    lat1 = float(sys.argv[2]) #Current lat point converted to radians
+    lon1 = float(sys.argv[3]) #Current long point converted to radians
 
 except IndexError:	#Exception in number of arguments.
 	print("Number of arguments are less:", sys.exc_info()[0])
 	#raise	#use this if you want to throw error to caller. Check python coding for more details.
 	sys.exit(118)
                     
- 
- 
- 
+print "lat1: ",lat1
+print "lon1: ",lon1 
+
+count=1
+
 if ((lat1 >= -90) and (lat1 <= 90)):
      count = 0
-     
+        
 if ((lon1 >= -180) and (lon1 <= 180)):
      count = 0
-     
-if count == 0 :
+        
+if count != 0 :
     print("The Latitude Longitude is not correct", sys.exc_info()[0])
     sys.exit(118)
 
-     
+
+
 lat1 = math.radians(lat1) #Current lat point converted to radians
 lon1 = math.radians(lon1) #Current long point converted to radians
                     

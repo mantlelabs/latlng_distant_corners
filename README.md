@@ -10,3 +10,6 @@ Longitude of center in degree;
 
 Output:-
 Latitude and longitude for all 4 corner points of the square.
+
+Example:
+![sample run](screenshots/test1.PNG)
