@@ -21,4 +21,4 @@ Latitude and longitude for all 4 corner points of the square.
 Example:-  
 
 ![sample run](screenshots/test1.PNG)  
-python Center_to_corners.py 1500 47.1009358604 5.0074005580839795
+python Center_to_corners.py 3000 47.1009358604 5.0074005580839795
